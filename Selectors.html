@@ -1,0 +1,79 @@
+<style>
+    p {
+        color: blue;
+    }
+    </style>
+    <p>I am blue</p>
+    <p class="example">I am also blue</p>
+    <p id="last" class="example">I am blue as well</p>
+
+    <style>
+        p.example {
+            color: green;
+        }
+        
+        p {
+            color: blue;
+        }    
+        </style>
+        <p>I am blue</p>
+        <p class="example">I am green now</p>
+        <p id="last" class="example">I am also green now</p>
+
+        <style>
+            p#last {
+                color: red;    
+            }
+            
+            p.example {
+                color: green;
+            }
+            
+            p {
+                color: blue;
+            }    
+            </style>
+            <p>I am blue</p>
+            <p class="example">I am green now</p>
+            <p id="last" class="example">And now I am red</p>
+
+            <style>
+                .strongblue strong {
+                    color: blue;    
+                }
+                .strongblue test {
+                    color: orange;    
+                }
+                </style>
+                <p>This is the <strong>first</strong> sentence.</p>
+                <p class="strongblue">This is the <test>second</test> sentence.</p>
+
+
+                <style>
+                    hmm:hover {
+                        background-color: yellow;
+                    }
+                    </style>
+                    <hmm>Paragraphs now have a yellow background when hovering over them.</hmm>
+
+                    <style>
+                        a:active {
+                            font-weight: bold;    
+                        }
+                        </style>
+                        <p>
+                            <a href="#first">First Section</a>
+                            <a href="#second">Second Section</a>
+                            <a href="#third">Third Section</a>
+                        </p>
+
+                        <style>
+                            input:focus {
+                                font-weight: bold;    
+                            }
+                            </style>
+                            <form>
+                                <p><input type="text" value="First field"></p>
+                                <p><input type="text" value="Second field"></p>
+                                <p><input type="text" value="Third field"></p>        
+                            </form>
